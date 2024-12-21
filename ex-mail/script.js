@@ -4,11 +4,47 @@
 
 // Creare un lista di email per la festa
 
-
-// Chiedere alll'utente la sua email
-
-// SE l'email è presente all'interno della lista
-    //  OUTPUT
+const emailList = ["leonardo@gmail.com", "andrea@gmail.com",
+    "marco@gmail.com", "simona@gmail.com","ylenia@gmail.com","flavio@gmail.com",
+    "manuel@gmail.com",];
+    
+    console.log(emailList);
+    
+    
+    
+    // Chiedere all'utente la sua email
+    
+    let userMail = prompt("Inserisci la tua email");
+    console.log(userMail);
+    
+    // Variabile email 
+    let correctMail = false;
+    
+    // SE l'email è presente all'interno della lista
+    
+    for  (let i = 0; i <= emailList.length; i++){
+        
+        if( emailList[i] === userMail) {
+           correctMail = true;
+            
+         
+        }
+        
+    }
+      //  OUTPUT
     // stamperà la sua conferma  alla festa
 
-// ALTRIMENTI verrà scartata
+    if (correctMail === true) {
+        console.log("Puoi accedere alla festa");
+    }
+
+
+ // ALTRIMENTI verrà scartata
+    else{
+        console.log("Non puoi accedere alle festa");
+        
+    }
+
+  
+    
+   
